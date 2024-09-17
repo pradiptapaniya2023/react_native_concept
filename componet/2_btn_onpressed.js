@@ -6,8 +6,8 @@ const Button_pressed = () => {
         console.warn("Simple warn msg print")
     }
 
-    const fruit2 = () => {
-        console.warn("Arrow warn msg print")
+    const fruit2 = (val) => {
+        console.warn(`Arrow warn msg print ${val}`)
     }
 
     return (
@@ -25,7 +25,7 @@ const Button_pressed = () => {
             <View style={{ padding: 10 }}>
                 <Button
                     title="Arrow msg"
-                    onPress={() => fruit2()}
+                    onPress={() => fruit2(20)}
                 />
             </View>
 
