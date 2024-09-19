@@ -10,7 +10,6 @@ class C_Component extends React.Component {
         };
     }
 
-    // Function to update the name and age state separately
     updateName(text1) {
         this.setState({ name: text1 });
     }
@@ -26,14 +25,12 @@ class C_Component extends React.Component {
                     Name: {this.state.name} | Age: {this.state.age}
                 </Text>
 
-                {/* TextInput for name */}
                 <TextInput
                     placeholder="Enter any name!"
                     onChangeText={(text1) => this.updateName(text1)}
                     style={{ borderColor: 'gray', borderWidth: 1, marginBottom: 10, padding: 5 }}
                 />
 
-                {/* TextInput for age */}
                 <TextInput
                     placeholder="Enter any age!"
                     keyboardType="numeric"
@@ -41,11 +38,9 @@ class C_Component extends React.Component {
                     style={{ borderColor: 'gray', borderWidth: 1, marginBottom: 10, padding: 5 }}
                 />
 
-                {/* Button to print a message */}
                 <Button title="Call Function?" onPress={() => console.warn("Button pressed!")} />
 
-                {/* Second component */}
-                <C_Component2 name= {this.state.name} age= {this.state.age}/>
+                <C_Component2 name={this.state.name} age={this.state.age} />
             </View>
         );
     }
@@ -56,7 +51,7 @@ class C_Component2 extends React.Component {
         return (
             <View>
                 <Text style={{ fontSize: 30, color: 'blue' }}>
-                    Second Class Component 
+                    Second Class Component
                 </Text>
                 <Text style={{ fontSize: 30, color: 'blue' }}>
                     {this.props.name} {this.props.age}
