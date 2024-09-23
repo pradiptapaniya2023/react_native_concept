@@ -2,7 +2,8 @@ import React from 'react';
 import { View } from 'react-native';
 // import Componet_list from './componet/17_component_flat_list';
 // import C_Component from './componet/20_class_component';
-import Refrn from './componet/61_ref';
+// import Refrn from './componet/61_ref';
+import AsyncStoragern from './componet/64_async_storage';
 // import View_first from './componet/1_text_view_btn';
 // import Button_pressed from './componet/2_btn_onpressed';
 // import State_rn from './componet/3_state';
@@ -21,7 +22,8 @@ function App() {
       {/* <Flat_list_rn/> */}
       {/* <Componet_list /> */}
       {/* <C_Component/> */}
-      <Refrn/>
+      {/* <Refrn/> */}
+      <AsyncStoragern/>
     </View>
   )
 }
